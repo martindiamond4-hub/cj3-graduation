@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Clifford Jackson III, Pharm.D. — Class of 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Tenor+Sans&display=swap" rel="stylesheet"/>
+<style>
+  :root{--maroon:#6B1E2E;--maroon-deep:#4A1020;--maroon-light:#8B2E42;--silver:#A8A8B4;--silver-mid:#888896;--silver-pale:#F5F5F7;--white:#FAFAFA;--text-dark:#1A1218;--text-mid:#4A3840;}
+  *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}body{background:var(--white);color:var(--text-dark);font-family:'Tenor Sans',sans-serif;overflow-x:hidden;}
+  .bg-layer{position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse 70% 50% at 15% 10%,rgba(107,30,46,0.07) 0%,transparent 60%),radial-gradient(ellipse 60% 70% at 85% 90%,rgba(107,30,46,0.05) 0%,transparent 60%),#FAFAFA;pointer-events:none;}
+  .bg-swirl{position:fixed;inset:0;z-index:0;background-image:repeating-radial-gradient(circle at 25% 25%,transparent 0,transparent 20px,rgba(107,30,46,0.018) 21px,transparent 22px),repeating-radial-gradient(circle at 75% 75%,transparent 0,transparent 28px,rgba(168,168,180,0.035) 29px,transparent 30px);pointer-events:none;animation:bgDrift 40s ease-in-out infinite alternate;}
+  @keyframes bgDrift{from{transform:scale(1);}to{transform:scale(1.04) rotate(0.6deg);}}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:center;gap:1.2rem;padding:0.8rem 1rem;background:rgba(250,250,250,0.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(107,30,46,0.1);flex-wrap:wrap;}
+  nav a{font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--maroon);text-decoration:none;opacity:0.6;padding-bottom:3px;border-bottom:2px solid transparent;transition:opacity 0.3s,border-color 0.3s;}
+  nav a:hover,nav a.active{opacity:1;border-bottom-color:var(--maroon);}
+
+  /* SECTIONS */
+  section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:7rem 2rem 5rem;}
+  .s-label{font-size:0.58rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--maroon);opacity:0.55;margin-bottom:0.8rem;text-align:center;}
+  .s-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:300;color:var(--maroon-deep);text-align:center;letter-spacing:0.06em;}
+  .s-rule{width:50px;height:1px;background:var(--maroon);opacity:0.22;margin:1.5rem auto 3rem;}
+
+  /* HERO */
+  #hero{text-align:center;}
+  .hero-rx{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(6rem,18vw,14rem);color:var(--maroon);opacity:0.05;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;user-select:none;}
+  .hero-eyebrow{font-size:0.6rem;letter-spacing:0.38em;text-transform:uppercase;color:var(--maroon);opacity:0.6;margin-bottom:2rem;animation:fadeUp 1s ease 0.2s both;}
+  .hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,7vw,5rem);font-weight:300;color:var(--maroon-deep);letter-spacing:0.12em;animation:fadeUp 1s ease 0.4s both;margin-bottom:0.4rem;}
+  .hero-deg{font-size:0.72rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--text-mid);animation:fadeUp 1s ease 0.6s both;margin-bottom:2.5rem;}
+  .hero-div{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:2.5rem;animation:fadeUp 1s ease 0.7s both;}
+  .hero-div span{display:block;height:1px;width:70px;background:linear-gradient(to right,transparent,var(--maroon),transparent);}
+  .hero-div em{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--maroon);opacity:0.5;}
+  .hero-class{font-size:0.62rem;letter-spacing:0.45em;text-transform:uppercase;color:var(--silver);animation:fadeUp 1s ease 0.9s both;}
+  .hero-uni{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,2vw,1.05rem);color:var(--text-mid);opacity:0.75;animation:fadeUp 1s ease 1.1s both;margin-top:0.5rem;}
+  .scroll-cue{position:absolute;bottom:2.5rem;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:0.4rem;animation:fadeUp 1s ease 1.6s both;opacity:0.35;}
+  .scroll-cue span{font-size:0.5rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--maroon);}
+  .scroll-cue i{display:block;width:1px;height:38px;background:linear-gradient(to bottom,var(--maroon),transparent);animation:pulse 2s ease infinite;}
+  @keyframes pulse{0%,100%{opacity:0.35}50%{opacity:1}}
+
+  /* ── ENVELOPE SECTION ── */
+  #envelope-section{background:linear-gradient(180deg,transparent,rgba(107,30,46,0.04) 50%,transparent);gap:2.5rem;padding-bottom:8rem;}
+  .env-row{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;width:100%;max-width:900px;}
+  .env-col{flex:1;min-width:260px;max-width:380px;display:flex;flex-direction:column;align-items:center;gap:0.8rem;margin-bottom:5rem;}
+  .env-col-label{font-size:0.58rem;letter-spacing:0.32em;text-transform:uppercase;opacity:0.6;text-align:center;}
+  .env-col-label.lbl-maroon{color:var(--maroon);}
+  .env-col-label.lbl-silver{color:var(--silver-mid);}
+
+  /* envelope */
+  .env-scene{width:100%;text-align:center;position:relative;padding-top:0;}
+  .tap-hint{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;opacity:0.5;margin-bottom:0.9rem;transition:opacity 0.5s;animation:hintPulse 2.5s ease-in-out infinite;}
+  .tap-hint.th-maroon{color:var(--maroon);}
+  .tap-hint.th-silver{color:var(--silver-mid);}
+  @keyframes hintPulse{0%,100%{opacity:0.4}50%{opacity:0.8}}
+  .env-scene.opened .tap-hint{opacity:0!important;animation:none;pointer-events:none;}
+  .envelope{position:relative;width:100%;cursor:pointer;perspective:1400px;}
+  .env-body{position:relative;width:100%;aspect-ratio:1.6/1;border-radius:3px;overflow:visible;}
+  .env-body.env-maroon{background:var(--maroon-deep);box-shadow:0 20px 55px rgba(74,16,32,0.4),0 4px 14px rgba(74,16,32,0.2);overflow:visible;}
+  .env-body.env-silver{background:#5E5E6A;box-shadow:0 20px 55px rgba(60,60,80,0.35),0 4px 14px rgba(60,60,80,0.2);overflow:visible;}
+
+  /* interior — patterned */
+  .env-interior{position:absolute;inset:0;}
+  .env-maroon .env-interior{background:linear-gradient(160deg,#f9f7f3,#ede9e2);}
+  .env-silver .env-interior{background:linear-gradient(160deg,#f4f4f8,#e8e8ee);}
+
+  /* decorative diamond pattern on interior */
+  .env-interior::after{
+    content:'';position:absolute;inset:0;
+    background-image:
+      linear-gradient(45deg,rgba(107,30,46,0.06) 25%,transparent 25%),
+      linear-gradient(-45deg,rgba(107,30,46,0.06) 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,rgba(107,30,46,0.06) 75%),
+      linear-gradient(-45deg,transparent 75%,rgba(107,30,46,0.06) 75%);
+    background-size:12px 12px;
+    background-position:0 0,0 6px,6px -6px,-6px 0px;
+  }
+  .env-silver .env-interior::after{
+    background-image:
+      linear-gradient(45deg,rgba(100,100,130,0.07) 25%,transparent 25%),
+      linear-gradient(-45deg,rgba(100,100,130,0.07) 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,rgba(100,100,130,0.07) 75%),
+      linear-gradient(-45deg,transparent 75%,rgba(100,100,130,0.07) 75%);
+    background-size:12px 12px;
+    background-position:0 0,0 6px,6px -6px,-6px 0px;
+  }
+
+  .env-side-l{position:absolute;top:0;left:0;bottom:0;width:52%;clip-path:polygon(0 0,0 100%,100% 50%);z-index:3;}
+  .env-side-r{position:absolute;top:0;right:0;bottom:0;width:52%;clip-path:polygon(100% 0,100% 100%,0 50%);z-index:3;}
+  .env-btm{position:absolute;bottom:0;left:0;right:0;height:56%;clip-path:polygon(0 100%,100% 100%,50% 0);z-index:4;}
+  .env-maroon .env-side-l,.env-maroon .env-side-r{background:var(--maroon-light);}
+  .env-maroon .env-btm{background:var(--maroon);}
+  .env-silver .env-side-l,.env-silver .env-side-r{background:#7A7A88;}
+  .env-silver .env-btm{background:#52525E;}
+
+  .env-flap-wrap{position:absolute;top:0;left:0;right:0;height:56%;z-index:10;transform-origin:top center;transform-style:preserve-3d;transition:transform 1.8s cubic-bezier(0.4,0,0.2,1);}
+  .env-scene.opened .env-flap-wrap{transform:rotateX(-180deg);}
+  .env-flap-face,.env-flap-back{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);backface-visibility:hidden;}
+  .env-maroon .env-flap-face{background:var(--maroon);}
+  .env-maroon .env-flap-back{background:linear-gradient(160deg,#f0ede6,#e8e4dc);}
+  .env-silver .env-flap-face{background:#5E5E6A;}
+  .env-silver .env-flap-back{background:linear-gradient(160deg,#ededf2,#e2e2ea);}
+  .env-flap-back{transform:rotateX(180deg);}
+
+  /* flap inner diamond pattern too */
+  .env-flap-back::after{
+    content:'';position:absolute;inset:0;
+    background-image:
+      linear-gradient(45deg,rgba(107,30,46,0.05) 25%,transparent 25%),
+      linear-gradient(-45deg,rgba(107,30,46,0.05) 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,rgba(107,30,46,0.05) 75%),
+      linear-gradient(-45deg,transparent 75%,rgba(107,30,46,0.05) 75%);
+    background-size:10px 10px;
+    background-position:0 0,0 5px,5px -5px,-5px 0px;
+    clip-path:polygon(0 0,100% 0,50% 100%);
+  }
+
+  /* old env-card removed */
+
+  /* Flyer card — slides out of envelope and rests IN FRONT of it */
+  .env-scene{position:relative;}
+  .env-card-outer{
+    position:absolute;
+    bottom:0; left:0; right:0;
+    z-index:100;
+    display:flex;
+    justify-content:center;
+    pointer-events:none;
+  }
+  .env-card{
+    width:92%;
+    background:white;
+    border-radius:2px;
+    box-shadow:0 8px 40px rgba(0,0,0,0.35),0 2px 12px rgba(0,0,0,0.2);
+    overflow:hidden;
+    /* starts hidden inside the envelope bottom */
+    transform:translateY(100%);
+    opacity:0;
+    transition:
+      transform 1.6s cubic-bezier(0.22,1,0.36,1) 0.9s,
+      opacity 0.4s ease 0.9s;
+    pointer-events:none;
+    cursor:pointer;
+  }
+  /* When opened: card slides up and sits covering ~60% of envelope face */
+  .env-scene.opened .env-card{
+    transform:translateY(-30%);
+    opacity:1;
+    pointer-events:all;
+  }
+  .env-card img{width:100%;height:auto;display:block;}
+
+    /* ── CONFETTI CANVAS ── */
+  .confetti-canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:50;}
+
+  /* ── RSVP SECTION — always visible, full height ── */
+  #rsvp{background:linear-gradient(180deg,transparent,rgba(107,30,46,0.03) 50%,transparent);min-height:auto;padding:5rem 2rem;}
+  .rsvp-wrap{width:min(640px,94vw);text-align:center;}
+  .rsvp-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text-mid);opacity:0.65;margin-bottom:1.5rem;}
+  .rsvp-wrap iframe{width:100%;border:1px solid rgba(107,30,46,0.1);border-radius:2px;background:white;display:block;}
+
+  /* ── CALENDAR ── */
+  #calendar{background:linear-gradient(180deg,transparent,rgba(107,30,46,0.03) 50%,transparent);}
+  .cal-cards{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;max-width:820px;width:100%;}
+  .cal-card{flex:1;min-width:260px;max-width:360px;border:1px solid rgba(107,30,46,0.12);padding:2.5rem 2rem;background:rgba(255,255,255,0.7);backdrop-filter:blur(10px);position:relative;transition:transform 0.4s,box-shadow 0.4s;}
+  .cal-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+  .cal-card.cal-maroon::before{background:linear-gradient(90deg,var(--maroon-deep),var(--silver),var(--maroon));}
+  .cal-card.cal-silver::before{background:linear-gradient(90deg,var(--silver-mid),#ccc,var(--silver-mid));}
+  .cal-card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(107,30,46,0.1);}
+  .cal-icon{font-size:1.6rem;margin-bottom:1rem;opacity:0.55;}
+  .cal-type{font-size:0.55rem;letter-spacing:0.35em;text-transform:uppercase;margin-bottom:0.5rem;}
+  .cal-card.cal-maroon .cal-type{color:var(--maroon);opacity:0.6;}
+  .cal-card.cal-silver .cal-type{color:var(--silver-mid);opacity:0.8;}
+  .cal-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--maroon-deep);margin-bottom:0.5rem;line-height:1.2;}
+  .cal-detail{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.9rem;color:var(--text-mid);line-height:1.9;margin-bottom:1.8rem;opacity:0.8;}
+  .cal-btns{display:flex;gap:0.7rem;flex-wrap:wrap;}
+  .cal-btn{flex:1;min-width:110px;padding:0.75rem 1rem;font-family:'Tenor Sans',sans-serif;font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;text-align:center;border:1px solid;transition:all 0.3s;display:flex;align-items:center;justify-content:center;gap:0.4rem;}
+  .cal-btn.apple{border-color:var(--text-dark);color:var(--text-dark);}
+  .cal-btn.apple:hover{background:var(--text-dark);color:white;}
+  .cal-btn.google{border-color:var(--maroon);color:var(--maroon);}
+  .cal-card.cal-silver .cal-btn.google{border-color:var(--silver-mid);color:var(--silver-mid);}
+  .cal-btn.google:hover,.cal-card.cal-silver .cal-btn.google:hover{background:var(--silver-mid);color:white;}
+
+  /* GALLERY — HORIZONTAL SLIDER */
+  #gallery{min-height:auto;padding-bottom:4rem;}
+  .slider-wrap{position:relative;width:100%;max-width:1020px;display:flex;align-items:center;gap:1.2rem;}
+  .slider-track-outer{flex:1;overflow:hidden;}
+  .slider-track{display:flex;gap:0.6rem;will-change:transform;}
+  .slide{
+    flex:0 0 calc((100% - 1.8rem) / 4);
+    aspect-ratio:4/5;
+    overflow:hidden;
+    border-radius:3px;
+    background:var(--silver-pale);
+  }
+  .slide img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;cursor:zoom-in;}
+  .slide:hover img{transform:scale(1.04);}
+  .slider-btn{
+    flex-shrink:0;
+    width:44px;height:44px;
+    border-radius:50%;
+    border:1px solid rgba(107,30,46,0.3);
+    background:rgba(255,255,255,0.95);
+    color:var(--maroon);
+    font-size:1.2rem;
+    cursor:pointer;
+    transition:all 0.3s;
+    display:flex;align-items:center;justify-content:center;
+    backdrop-filter:blur(8px);
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  }
+  .slider-btn:hover{background:var(--maroon);color:white;}
+  .slider-dots{display:flex;gap:0.4rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap;max-width:300px;margin-left:auto;margin-right:auto;}
+  .dot{width:7px;height:7px;border-radius:50%;background:rgba(107,30,46,0.2);cursor:pointer;transition:background 0.3s,transform 0.3s;}
+  .dot.active{background:var(--maroon);transform:scale(1.3);}
+  @media(max-width:700px){
+    .slide{flex:0 0 calc((100% - 0.6rem) / 2);aspect-ratio:3/4;}
+  }
+  @media(max-width:500px){
+    .slide{flex:0 0 100%;aspect-ratio:4/5;}
+    .slider-btn{width:38px;height:38px;}
+  }
+
+  /* THANK YOU */
+  #thankyou{background:linear-gradient(180deg,transparent,rgba(107,30,46,0.04) 50%,transparent);text-align:center;display:flex;flex-direction:column;align-items:center;}
+  .ty-body{max-width:680px;margin:0 auto;}
+  .ty-qmark{font-family:'Cormorant Garamond',serif;font-size:7rem;color:var(--maroon);opacity:0.07;line-height:0.4;display:block;margin-bottom:1.5rem;}
+  .ty-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.05rem,2.2vw,1.2rem);font-weight:300;font-style:italic;line-height:2.2;color:var(--text-mid);text-align:left;}
+  .ty-text p{margin-bottom:1.6em;}.ty-text p:last-child{margin-bottom:0;}
+  .ty-hi{font-style:normal;color:var(--maroon-deep);font-weight:600;}
+  .ty-sig{margin-top:2.8rem;font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,1.9rem);font-style:italic;color:var(--maroon-deep);text-align:center;}
+  .ty-deg{font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver);margin-top:0.4rem;text-align:center;}
+
+  footer{position:relative;z-index:1;text-align:center;padding:2.5rem;border-top:1px solid rgba(107,30,46,0.08);}
+  .foot-text{font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--maroon);opacity:0.4;}
+  .foot-rx{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:2rem;color:var(--maroon);opacity:0.1;display:block;margin-top:0.5rem;}
+  .lb{display:none;position:fixed;inset:0;z-index:900;background:rgba(26,18,24,0.95);align-items:center;justify-content:center;-webkit-overflow-scrolling:touch;}
+  .lb.open{display:flex;} .lb img{max-width:95vw;max-height:85vh;object-fit:contain;border-radius:2px;}
+  .lb-x{position:absolute;top:1.5rem;right:2rem;color:rgba(255,255,255,0.5);font-size:0.7rem;letter-spacing:0.15em;cursor:pointer;font-family:'Tenor Sans',sans-serif;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease,transform 0.8s ease;}
+  .reveal.vis{opacity:1;transform:translateY(0);}
+  @media(max-width:640px){
+    nav{gap:1rem;}
+    .env-row{flex-direction:column;align-items:center;}
+    .env-col{max-width:320px;width:100%;}
+    .masonry{grid-template-columns:repeat(2,1fr);}
+    .masonry .m-item:nth-child(1),.masonry .m-item:nth-child(6){grid-column:span 2;}
+    .cal-cards,.flyers-row{flex-direction:column;align-items:center;}
+  }
+</style>
+</head>
+<body>
+<div class="bg-layer"></div>
+<div class="bg-swirl"></div>
+
+<nav id="mainNav">
+  <a href="#hero">Home</a>
+  <a href="#envelope-section">Invitations</a>
+  <a href="#rsvp">RSVP</a>
+  <a href="#calendar">Events</a>
+  <a href="#gallery">Journey</a>
+  <a href="#thankyou">Thank You</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-rx">Rx</div>
+  <p class="hero-eyebrow">Texas Southern University · College of Pharmacy &amp; Health Sciences</p>
+  <h1 class="hero-name">CLIFFORD JACKSON III</h1>
+  <p class="hero-deg">Pharm.D. &nbsp;·&nbsp; Class of 2026</p>
+  <div class="hero-div"><span></span><em>Rx</em><span></span></div>
+  <p class="hero-class">Class of 2026</p>
+  <p class="hero-uni">College of Pharmacy &amp; Health Sciences — Texas Southern University</p>
+  <div class="scroll-cue"><span>Scroll</span><i></i></div>
+</section>
+
+<!-- TWO ENVELOPES -->
+<section id="envelope-section">
+  <p class="s-label reveal">You're Invited</p>
+  <h2 class="s-title reveal">Open Your Invitations</h2>
+  <div class="s-rule reveal"></div>
+
+  <div class="env-row">
+
+    <!-- MAROON — Hooding -->
+    <div class="env-col">
+      <p class="env-col-label lbl-maroon">Hooding &amp; Culmination Ceremony</p>
+      <div class="env-scene" id="envScene1">
+        <p class="tap-hint th-maroon">✦ Tap to open ✦</p>
+        <canvas class="confetti-canvas" id="confetti1"></canvas>
+        <div class="envelope" onclick="openEnvelope('envScene1','confetti1','maroon')">
+          <div class="env-body env-maroon">
+            <div class="env-interior"></div>
+            <div class="env-side-l"></div>
+            <div class="env-side-r"></div>
+            <div class="env-btm"></div>
+            <div class="env-flap-wrap">
+              <div class="env-flap-face"></div>
+              <div class="env-flap-back"></div>
+            </div>
+          </div>
+        </div>
+        <div class="env-card-outer">
+          <div class="env-card" onclick="replayEnvelope('envScene1','confetti1','maroon')">
+            <img src="flyer-hooding.png" alt="Hooding and Culmination Ceremony"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SILVER — Lunch -->
+    <div class="env-col">
+      <p class="env-col-label lbl-silver">Graduation Celebration Lunch</p>
+      <div class="env-scene" id="envScene2">
+        <p class="tap-hint th-silver">✦ Tap to open ✦</p>
+        <canvas class="confetti-canvas" id="confetti2"></canvas>
+        <div class="envelope" onclick="openEnvelope('envScene2','confetti2','silver')">
+          <div class="env-body env-silver">
+            <div class="env-interior"></div>
+            <div class="env-side-l"></div>
+            <div class="env-side-r"></div>
+            <div class="env-btm"></div>
+            <div class="env-flap-wrap">
+              <div class="env-flap-face"></div>
+              <div class="env-flap-back"></div>
+            </div>
+          </div>
+        </div>
+        <div class="env-card-outer">
+          <div class="env-card" onclick="replayEnvelope('envScene2','confetti2','silver')">
+            <img src="flyer-lunch.png" alt="Graduation Celebration Lunch"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RSVP — always visible, full height -->
+<section id="rsvp">
+  <p class="s-label reveal">Kindly Respond by April 8th</p>
+  <h2 class="s-title reveal">RSVP</h2>
+  <div class="s-rule reveal"></div>
+  <div class="rsvp-wrap reveal">
+    <p class="rsvp-note">Questions? Contact Diamond at 832-677-5670</p>
+    <iframe
+      id="rsvpFrame"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdWS3hE73XbqFTwUJ46ZFcYQuNcIQDkzUq1QcQLLXyH9nbkyg/viewform?embedded=true"
+      frameborder="0" marginheight="0" marginwidth="0"
+      onload="autoResizeFrame(this)">Loading…</iframe>
+  </div>
+</section>
+
+<!-- ADD TO CALENDAR -->
+<section id="calendar">
+  <p class="s-label reveal">Save the Date</p>
+  <h2 class="s-title reveal">Add to Your Calendar</h2>
+  <div class="s-rule reveal"></div>
+  <div class="cal-cards">
+    <div class="cal-card cal-maroon reveal">
+      <div class="cal-icon">🎓</div>
+      <p class="cal-type">Hooding &amp; Culmination Ceremony</p>
+      <h3 class="cal-name">The Hooding</h3>
+      <p class="cal-detail">May 7, 2026 · 6:30 PM<br/>Graville M. Sawyer Auditorium<br/>3100 Cleburne St, Houston, TX 77004</p>
+      <div class="cal-btns">
+        <a class="cal-btn apple" href="#" onclick="downloadICS('Hooding & Culmination Ceremony - Clifford Jackson III, Pharm.D.','Graville M. Sawyer Auditorium, 3100 Cleburne St, Houston TX 77004','20260507T183000','20260507T210000');return false;">🍎 Apple</a>
+        <a class="cal-btn google" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hooding+%26+Culmination+Ceremony+-+Clifford+Jackson+III&dates=20260507T183000/20260507T210000&details=Hooding+%26+Culmination+Ceremony+for+Clifford+Jackson+III%2C+Pharm.D.%2C+Class+of+2026&location=Graville+M.+Sawyer+Auditorium%2C+3100+Cleburne+St%2C+Houston+TX+77004">📅 Google</a>
+      </div>
+    </div>
+    <div class="cal-card cal-silver reveal">
+      <div class="cal-icon">🥂</div>
+      <p class="cal-type">Graduation Celebration</p>
+      <h3 class="cal-name">Celebration Lunch</h3>
+      <p class="cal-detail">May 8, 2026 · 12:30 PM<br/>Chama Gaucha Brazilian Steakhouse<br/>5865 Westheimer Rd, Houston, TX 77057</p>
+      <div class="cal-btns">
+        <a class="cal-btn apple" href="#" onclick="downloadICS('Graduation Celebration Lunch - Clifford Jackson III, Pharm.D.','Chama Gaucha Brazilian Steakhouse, 5865 Westheimer Rd, Houston TX 77057','20260508T123000','20260508T150000');return false;">🍎 Apple</a>
+        <a class="cal-btn google" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Graduation+Celebration+Lunch+-+Clifford+Jackson+III&dates=20260508T123000/20260508T150000&details=Graduation+Celebration+Lunch+for+Clifford+Jackson+III%2C+Pharm.D.%2C+Class+of+2026&location=Chama+Gaucha%2C+5865+Westheimer+Rd%2C+Houston+TX+77057">📅 Google</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <p class="s-label reveal">The Pharmacy Journey</p>
+  <h2 class="s-title reveal">Years in the Making</h2>
+  <div class="s-rule reveal"></div>
+
+  <div class="slider-wrap reveal">
+    <button class="slider-btn slider-prev" onclick="slideGallery(-1)">&#8592;</button>
+    <div class="slider-track-outer">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide"><img src="p01-txstate-grad.jpeg" alt="Texas State graduation" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p02-family-patricia.jpeg" alt="Family with Patricia" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p03-wedding.jpeg" alt="Wedding with Diamond" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p04-walmart-trophy.jpeg" alt="Walmart FY22 trophy" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p05-walmart-award.jpeg" alt="Pharmacy Tech of the Year" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p06-pharm-tech-cake.jpeg" alt="Regional Tech cake" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p07-whitecoat-balloons1.jpeg" alt="White coat show" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p08-whitecoat-balloons2.jpeg" alt="White coat celebration" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p09-whitecoat-diamond.jpeg" alt="White coat with Diamond" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p10-whitecoat-hug.jpeg" alt="White coat hug" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p11-whitecoat-friend.jpeg" alt="White coat with friend" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p12-whitecoat-group1.jpeg" alt="White coat group" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p13-whitecoat-group2.jpeg" alt="White coat group 2" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p14-whitecoat-diamond2.jpeg" alt="White coat selfie" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p15-mister-pharmacy.jpeg" alt="Mr. TSU Pharmacy" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p16-tsu-vibes.jpeg" alt="TSU campus" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p17-tsu-maroon-selfie.jpeg" alt="TSU maroon selfie" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p18-phils-induction1.jpeg" alt="Phi Lambda Sigma" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p19-phils-induction2.jpeg" alt="Phi Lambda Sigma 2" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p20-cords-ceremony.jpeg" alt="Getting cords placed" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p21-cords-closeup.jpeg" alt="Doctoral regalia" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p22-cords-gown.jpeg" alt="Graduation gown" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p23-headshot-tsu.jpeg" alt="TSU headshot" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p24-tsu-immunization.jpeg" alt="TSU immunization booth" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p25-tsu-service2.jpeg" alt="TSU service" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p26-breast-cancer1.jpeg" alt="Breast cancer awareness" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p27-breast-cancer2.jpeg" alt="Breast cancer awareness 2" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p28-tsu-health-screen.jpeg" alt="TSU health screening" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p29-harris-health.jpeg" alt="Harris Health" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p30-camp-rainbow1.jpeg" alt="Camp Rainbow" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p31-camp-rainbow2.jpeg" alt="Camp Rainbow group" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p32-camp-rainbow3.jpeg" alt="Camp Rainbow sign" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p33-walgreens-rotation.jpeg" alt="Walgreens rotation" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p34-tsu-jacket-taco.jpeg" alt="TSU jacket" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p35-dad-certificate.jpeg" alt="With dad" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p36-harris-rotation1.jpeg" alt="Harris Health rotation" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p37-harris-rotation2.jpeg" alt="Harris Health rotation 2" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p38-methodist-laugh.jpeg" alt="Methodist rotation" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p39-methodist-group.jpeg" alt="Methodist group" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p40-methodist-sterile.jpeg" alt="Sterile compounding" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p41-methodist-selfie.jpeg" alt="Methodist selfie" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p42-bw-portrait.jpeg" alt="Black and white portrait" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p43-blue-suit.jpeg" alt="Professional portrait" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p44-methodist-holiday.jpeg" alt="Methodist holiday" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p45-methodist-lobby.jpeg" alt="Methodist lobby" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p46-butterfly-bw.jpeg" alt="Butterfly wall" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p47-pharm-week.jpeg" alt="Happy Pharmacy Week" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p48-dell-seton.jpeg" alt="Dell Seton" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p49-poster-solo.jpeg" alt="Research poster" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p50-poster-with-kelly.jpeg" alt="Poster with Kelly" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p51-poster-pointing.jpeg" alt="Poster presentation" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p52-conf-trio.jpeg" alt="Conference trio" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p53-conf-group-stars.jpeg" alt="Conference group" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p54-conf-tsu-crew.jpeg" alt="TSU crew" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p55-utmb-poster.jpeg" alt="UTMB poster" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p56-bellagio-group1.jpeg" alt="Bellagio conference" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p57-bellagio-group2.jpeg" alt="Bellagio group" onclick="openLb(this.src)"/></div>
+        <div class="slide"><img src="p58-diamond-vegas.jpeg" alt="Diamond in Vegas" onclick="openLb(this.src)"/></div>
+      </div>
+    </div>
+    <button class="slider-btn slider-next" onclick="slideGallery(1)">&#8594;</button>
+  </div>
+
+  <div class="slider-dots" id="sliderDots"></div>
+</section>
+
+<!-- THANK YOU -->
+<section id="thankyou">
+  <p class="s-label reveal">With Gratitude</p>
+  <h2 class="s-title reveal">Thank You</h2>
+  <div class="s-rule reveal"></div>
+  <div class="ty-body reveal">
+    <span class="ty-qmark">"</span>
+    <div class="ty-text">
+      <p>To you — yes, <em>you</em>, reading this right now — thank you for being here. Genuinely.</p>
+      <p>I'll be honest: I could not have drawn this version of my life on a map. A soon-to-be Doctor... of Pharmacy. God's plans were originally not mine — but through patience, a whole lot of listening, and some very persistent nudging from the people closest to me, this is now a soon-to-be reality.</p>
+      <p>There are so many people I owe gratitude to, but let me start at the top. <span class="ty-hi">Jesus.</span> Yes — I know, I know — cliché incoming: "I wouldn't be here without Him." But it's just simply true. My faith and my relationship with Him is ever-changing, ever-evolving, and with Him as my center and my number one, life has purpose. <em>I</em> have purpose — to be a light, just as He was, is, and always will be.</p>
+      <p>Next is my <span class="ty-hi">wife, Diamond.</span> She refused to let me settle. She pushed me to believe in myself and stood right beside me as my life partner through more challenges than either of us expected. She beautifully remains my greatest support system and the love of my life. This one's for you too, babe.</p>
+      <p>And then there are <span class="ty-hi">my parents.</span> My dad, <span class="ty-hi">Clifford Jr.</span> — whose consistent <em>demand</em> (ahem, "recommendation") to go meet his local pharmacist quite literally started this entire journey. What began as a conversation became a career as a pharmacy technician in training, and now — a pharmacist. I see what you did there, Dad.</p>
+      <p>And my mother — <span class="ty-hi">Patricia.</span> Beautiful, courageous, forward-thinking Patricia. She called me <em>Dr. Jackson</em> from the moment I was accepted into pharmacy school — not once wavering in that belief. Though she fought hard to be here in person, she is now with the Lord. Mom, thank you for being my rock, my gentle friend, my biggest champion, my mama bear. I love you. I miss you. And I know you're watching.</p>
+      <p>My journey doesn't end here — not even close. But we can't move forward without making a proper <em>Jackson-Lindsey</em> moment out of this milestone. And as I get older, I understand exactly why. I am a grateful and very willing participant.</p>
+      <p style="opacity:0.7;">With all my love — thank you for celebrating with me.</p>
+      <p style="margin-top:2.2rem;padding-top:1.4rem;border-top:1px solid rgba(107,30,46,0.1);font-family:'Tenor Sans',sans-serif;font-style:normal;font-size:0.72rem;letter-spacing:0.04em;color:var(--text-mid);opacity:0.45;">* No, this was not written by AI — despite the suspicious volume of em dashes. These are my real words. I just clean up nice.</p>
+    </div>
+    <p class="ty-sig">— CJ3</p>
+    <p class="ty-deg">Clifford Jackson III, Pharm.D. · Texas Southern University · Class of 2026</p>
+  </div>
+</section>
+
+<footer>
+  <span class="foot-rx">Rx</span>
+</footer>
+
+<div class="lb" id="lb" onclick="closeLb()">
+  <span class="lb-x" onclick="closeLb()">✕ close</span>
+  <img id="lbImg" src="" alt=""/>
+</div>
+
+<script>
+// ── IFRAME AUTO HEIGHT ──
+function autoResizeFrame(frame) {
+  try {
+    const h = frame.contentWindow.document.body.scrollHeight;
+    if (h > 400) frame.style.height = h + 40 + 'px';
+    else frame.style.height = '900px';
+  } catch(e) {
+    frame.style.height = '900px';
+  }
+}
+// Set initial height generously so nothing is cut off
+document.getElementById('rsvpFrame').style.height = '980px';
+
+// ── ENVELOPE + CONFETTI ──
+function openEnvelope(sceneId, canvasId, type) {
+  const scene = document.getElementById(sceneId);
+  if (scene.classList.contains('opened')) return;
+  scene.classList.add('opened');
+  setTimeout(() => launchConfetti(canvasId, type), 800);
+}
+
+function replayEnvelope(sceneId, canvasId, type) {
+  const scene = document.getElementById(sceneId);
+  // Reset
+  scene.classList.remove('opened');
+  // Force reflow
+  void scene.offsetWidth;
+  // Re-open after brief pause
+  setTimeout(() => {
+    scene.classList.add('opened');
+    setTimeout(() => launchConfetti(canvasId, type), 800);
+  }, 100);
+}
+
+function launchConfetti(canvasId, type) {
+  const canvas = document.getElementById(canvasId);
+  const rect = canvas.parentElement.getBoundingClientRect();
+  canvas.width = rect.width;
+  canvas.height = rect.height;
+  const ctx = canvas.getContext('2d');
+
+  // color palettes
+  const maroonPalette = ['#6B1E2E','#8B2E42','#4A1020','#C0A0A8','#E8D8DC','#FFFFFF'];
+  const silverPalette = ['#A8A8B4','#6E6E7A','#C8C8D4','#E8E8EE','#FFFFFF','#888896'];
+  const colors = type === 'maroon' ? maroonPalette : silverPalette;
+
+  const particles = Array.from({length: 80}, () => ({
+    x: canvas.width / 2,
+    y: canvas.height * 0.3,
+    vx: (Math.random() - 0.5) * 12,
+    vy: -(Math.random() * 10 + 4),
+    size: Math.random() * 7 + 3,
+    color: colors[Math.floor(Math.random() * colors.length)],
+    rotation: Math.random() * 360,
+    rotSpeed: (Math.random() - 0.5) * 8,
+    shape: Math.random() > 0.5 ? 'rect' : 'circle',
+    gravity: 0.3 + Math.random() * 0.2,
+    life: 1,
+    fade: 0.012 + Math.random() * 0.008
+  }));
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    let alive = false;
+    particles.forEach(p => {
+      p.x += p.vx;
+      p.vy += p.gravity;
+      p.y += p.vy;
+      p.rotation += p.rotSpeed;
+      p.life -= p.fade;
+      if (p.life <= 0) return;
+      alive = true;
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, p.life);
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation * Math.PI / 180);
+      ctx.fillStyle = p.color;
+      if (p.shape === 'rect') {
+        ctx.fillRect(-p.size / 2, -p.size / 4, p.size, p.size / 2);
+      } else {
+        ctx.beginPath();
+        ctx.arc(0, 0, p.size / 2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+    });
+    if (alive) requestAnimationFrame(draw);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  draw();
+}
+
+// ── ICS DOWNLOAD ──
+function downloadICS(title, location, start, end) {
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT',
+    'DTSTART:'+start,'DTEND:'+end,'SUMMARY:'+title,
+    'LOCATION:'+location,
+    'DESCRIPTION:You are invited to celebrate Clifford Jackson III, Pharm.D., Class of 2026.',
+    'END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));
+  a.download = title.replace(/[^a-z0-9]/gi,'_')+'.ics';
+  a.click();
+}
+
+// ── LIGHTBOX ──
+function openLb(src){document.getElementById('lbImg').src=src;document.getElementById('lb').classList.add('open');}
+function closeLb(){document.getElementById('lb').classList.remove('open');}
+
+// ── SCROLL REVEAL ──
+const reveals=document.querySelectorAll('.reveal');
+const ro=new IntersectionObserver((e)=>{e.forEach((el,i)=>{if(el.isIntersecting)setTimeout(()=>el.target.classList.add('vis'),i*90);});},{threshold:0.08});
+reveals.forEach(r=>ro.observe(r));
+
+// ── ACTIVE NAV + PARALLAX ──
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('nav a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id;});
+  navLinks.forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+cur)a.classList.add('active');});
+  const y=window.scrollY;
+  const n=document.querySelector('.hero-name');
+  const rx=document.querySelector('.hero-rx');
+  if(n)n.style.transform=`translateY(${y*0.07}px)`;
+  if(rx)rx.style.transform=`translate(-50%,-50%) translateY(${y*0.12}px)`;
+});
+
+  // ── GALLERY SLIDER ──
+  let slideIndex = 0;
+  function visibleCount(){ return window.innerWidth <= 420 ? 1 : window.innerWidth <= 700 ? 2 : 4; }
+
+  function initSlider() {
+    const track = document.getElementById('sliderTrack');
+    if (!track) return;
+    const slides = track.querySelectorAll('.slide');
+    const dots = document.getElementById('sliderDots');
+    const vc = visibleCount();
+    const pages = Math.ceil(slides.length / vc);
+    dots.innerHTML = '';
+    for (let i = 0; i < pages; i++) {
+      const d = document.createElement('div');
+      d.className = 'dot' + (i === 0 ? ' active' : '');
+      const pg = i; d.onclick = () => goToPage(pg);
+      dots.appendChild(d);
+    }
+    slideIndex = 0;
+    track.style.transition = 'none';
+    track.style.transform = 'translateX(0)';
+  }
+
+  function goToPage(page) {
+    const track = document.getElementById('sliderTrack');
+    if (!track) return;
+    const slides = track.querySelectorAll('.slide');
+    const vc = visibleCount();
+    const pages = Math.ceil(slides.length / vc);
+    slideIndex = Math.max(0, Math.min(page, pages - 1));
+    const slideEl = slides[0];
+    const slideW = slideEl.offsetWidth;
+    const gap = 9.6;
+    const offset = slideIndex * vc * (slideW + gap);
+    track.style.transition = 'transform 0.5s cubic-bezier(0.4,0,0.2,1)';
+    track.style.transform = `translateX(-${offset}px)`;
+    document.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('active', i === slideIndex));
+  }
+
+  function slideGallery(dir) {
+    const track = document.getElementById('sliderTrack');
+    if (!track) return;
+    const slides = track.querySelectorAll('.slide');
+    const pages = Math.ceil(slides.length / visibleCount());
+    goToPage(Math.max(0, Math.min(slideIndex + dir, pages - 1)));
+  }
+
+  window.addEventListener('resize', initSlider);
+  document.addEventListener('DOMContentLoaded', initSlider);
+  setTimeout(initSlider, 300);
+
+</script>
+</body>
+</html>
